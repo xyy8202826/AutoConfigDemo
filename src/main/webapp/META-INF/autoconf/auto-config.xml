@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <group name="database">
+        <property name="jdbc.jdbcUrl" defaultValue="jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf8" description="jdbcUrl"/>
+        <property name="jdbc.jdbcUsername" defaultValue="username" description="username" />
+        <property name="jdbc.jdbcPassword" defaultValue="password" description="password"/>
+    </group>
+
+    <script>
+        <generate template="spring-datasource.xml.vm"  destfile="WEB-INF/classes/spring-datasource.xml"  charset="UTF-8"/>
+    </script>
+</config>
+
